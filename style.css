@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: #131313;
+    font-family: "Yeseva One";
+    padding: 107px 0px;
+}
+    .main {
+        width: 81%;
+        margin: 0 auto;
+    }
+        .main__navigation {
+            width: 53.5%;
+            margin-left: 43%;
+            margin-bottom: 45px;
+            color: #FFFFFF4D;
+            font-weight: 400;
+            font-size: 14px;
+        }
+            .main__navigation ul {
+                display: flex;
+                gap: 9.7%;
+                list-style-type: none;
+            }
+                .activeNavName {
+                    padding-bottom: 6.5px;
+                    color: #E3B873;
+                    border-bottom: 1px solid #E3B873;
+                    transition: 0.3s ease;
+                }
+        .main__hero {
+            display: flex;
+        }
+            .main__master {
+                width: 42.2%;
+                padding-right: 4.3%;
+                box-sizing: border-box;
+            }
+                .main__title {
+                    display: flex;
+                    width: 57.2%;
+                    margin-bottom: 34px;
+                    color: #E3B873;
+                }
+                    .main__title h1 {
+                        width: 66%;
+                        font-weight: 400;
+                        font-size: 27px;
+                    }
+                    .main__title div {
+                        width: 92px;
+                        border-bottom: 1px solid #E3B873 ;
+                    }
+
+                .main__information p {
+                    margin-bottom: 42px;
+                    color: #FFFFFF;
+                    font-family: "Nunito Sans", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 26.5px;
+                }
+
+                .main__atributes {
+                    margin-bottom: 79px;
+                }
+                    .main__atributes h2 {
+                        margin-bottom: 9px;
+                        color: #E3B873;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                    .main__atributes_first-row {
+                        display: flex;
+                        min-height: 125px;
+                    }
+                        .main__city {
+                            width: 43%;
+                        }
+                        .main__apartament {
+                            width: 48%;
+                        }
+
+                    .main__atributes_second-row {
+                        display: flex;
+                    }
+                        .main__repair {
+                            width: 43%;
+                        }
+                        .main__cost {
+                            width: 48%;
+                        }
+
+
+            .main__buttons {
+                display: flex;
+                gap: 29.5px;
+                width: 205px;
+                min-height: 13px;
+            }
+                .main__left-button {
+                    width: 41.5px;
+                    min-height: 13px;
+                    background-color: #131313;
+                    background-image: url(./Images/leftButton.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: 0.3s ease;
+                }
+                .main__left-button:hover {
+                    transform: scale(1.3);
+                }
+                .main__right-button {
+                    width: 41.5px;
+                    min-height: 13px;
+                    background-color: #131313;
+                    background-image: url(./Images/rightButton.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: 0.3s ease;
+                }
+                .main__right-button:hover {
+                    transform: scale(1.3);
+                }
+                .main__circles {
+                    display: flex;
+                    gap: 17.5px;
+                    width: 64px;
+                    min-height: 13px;
+                }
+                    .circle {
+                        width: 9.5px;
+                        height: 9.5px;
+                        background-color: #FFFFFF4D;
+                        border-radius: 50%;
+                    }
+                    .activeCircle {
+                        background-color: #FFFFFF;
+                    }
+
+            #imageWrapper {
+                width: 57.8%;
+                min-height: 482px;
+            }
+                #image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
