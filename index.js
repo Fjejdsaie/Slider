@@ -13,6 +13,19 @@ const repair = document.querySelector(".main__repair p");
 rightButton.addEventListener("click", moveToTheRight);
 leftButton.addEventListener("click", moveToTheLeft);
 
+headings.forEach((elem, index)  => {
+    elem.addEventListener("click", () => {
+        switchingSlides(index);
+    });
+});
+
+circles.forEach((elem, index)  => {
+    elem.addEventListener("click", () => {
+        switchingSlides(index);
+    });
+});
+
+
 let index = 0;
 let atributes = [
     {
@@ -66,4 +79,11 @@ function moveToTheLeft () {
         index = atributes.length - 1
     };
     addItems(index);
+};
+
+function switchingSlides (n) {
+    removeItems(index);
+    addItems(n);
+
+    index = n;
 };

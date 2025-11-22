@@ -27,6 +27,7 @@ body {
                 display: flex;
                 gap: 9.7%;
                 list-style-type: none;
+                cursor: pointer;
             }
                 .activeNavName {
                     padding-bottom: 6.5px;
@@ -139,6 +140,7 @@ body {
                         height: 9.5px;
                         background-color: #FFFFFF4D;
                         border-radius: 50%;
+                        cursor: pointer;
                     }
                     .activeCircle {
                         background-color: #FFFFFF;
